@@ -1,4 +1,4 @@
-package tke.week_3.day_1;
+package tek.week_3.day_1;
 
 public class MixedTypes {
 /*
@@ -23,15 +23,16 @@ public class MixedTypes {
 */
 
     public static void main(String[] args) {
+
         float a = 3.4028235E38f;
         long b = 9223372036854775807l;
 
         System.out.println(a + b);
 
-
         System.out.println("Float max range: " + Float.MAX_VALUE);
         System.out.println(Long.MAX_VALUE);
         System.out.println("Double max: " + Double.MAX_VALUE);
+
     }
 
 }

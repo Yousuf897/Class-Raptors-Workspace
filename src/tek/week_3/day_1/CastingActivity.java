@@ -1,4 +1,4 @@
-package tke.week_3.day_1;
+package tek.week_3.day_1;
 
 public class CastingActivity {
 

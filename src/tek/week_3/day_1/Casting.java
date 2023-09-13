@@ -1,4 +1,4 @@
-package tke.week_3.day_1;
+package tek.week_3.day_1;
 
 
     /* Imagine you have a large container filled with water, and you need to transfer this water

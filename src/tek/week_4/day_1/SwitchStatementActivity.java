@@ -16,6 +16,7 @@ public class SwitchStatementActivity {
     public static void main(String[] args) {
 
         int dayNumber = 7;
+
         switch (dayNumber) {
             case 1:
                 System.out.println("Monday!");

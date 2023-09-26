@@ -10,6 +10,7 @@ public class EqualityActivityTwo {
     Check if the entered code matches the secret code.
     If the codes match, print "Access granted!" Otherwise, print "Access denied!".
     Also, determine if the entered code is definitely not the secret code and print a respective message.
+    *
     * */
 
     public static void main(String[] args) {

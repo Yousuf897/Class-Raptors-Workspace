@@ -1,0 +1,2 @@
+7. OR (||):
+A streaming service offers a special discount to students OR senior citizens. Given boolean isStudent = false; and boolean isSeniorCitizen = true;, write a condition to check if the person is eligible for the discount.

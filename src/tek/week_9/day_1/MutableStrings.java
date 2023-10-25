@@ -9,9 +9,8 @@ public class MutableStrings {
         sbf.append(" is easy!");
         System.out.println(sbf);
 
-
         String str1 = "name";
         System.out.println( str1.concat("a message") );
-    }
 
+    }
 }

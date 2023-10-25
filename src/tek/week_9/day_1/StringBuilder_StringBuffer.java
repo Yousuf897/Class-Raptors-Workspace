@@ -2,9 +2,10 @@ package tek.week_9.day_1;
 
 public class StringBuilder_StringBuffer {
 
-/*
 
-    StringBuilder:
+    /*
+
+    1. StringBuilder:
 
     Mutable: Unlike the String class, StringBuilder is mutable, which means you can modify its contents without creating a new object.
 
@@ -16,33 +17,72 @@ public class StringBuilder_StringBuffer {
 
     Methods: Provides methods such as append(), insert(), delete(), reverse(), and more to manipulate strings.
 
-            StringBuffer:
+    2. StringBuffer:
 
     Mutable: Just like StringBuilder, StringBuffer is also mutable.
 
     Performance: While it is faster than String for frequent modifications, it's generally slower than StringBuilder because of its
-     synchronized nature.
+    synchronized nature.
 
     Thread-safe: StringBuffer is synchronized, which means it is thread-safe. It can be safely used in multi-threaded environments
     without external synchronization.
 
-            Methods: Provides the same methods as StringBuilder for string manipulation.
+    Methods: Provides the same methods as StringBuilder for string manipulation.
 
     Real-life Analogy:
 
     Imagine you're working on a document. If you use a typewriter (which works like the String class), every time you make a change,
     you'd have to retype the entire document. This is tedious and inefficient. But with a computer word processor (like StringBuilder),
-     you can make edits anywhere in the document without retyping everything. Now, if multiple people want to edit the document
-      simultaneously, they'd need a system to ensure they don't make conflicting changes. A tool that manages this (like Google Docs)
-      can be compared to StringBuffer, ensuring edits are synchronized and don't conflict.
+    you can make edits anywhere in the document without retyping everything. Now, if multiple people want to edit the document
+    simultaneously, they'd need a system to ensure they don't make conflicting changes. A tool that manages this (like Google Docs)
+    can be compared to StringBuffer, ensuring edits are synchronized and don't conflict.
 
     When to use which?
 
-    Use String when your string won't change often.
-    Use StringBuilder when you need to modify a string frequently in a single-threaded environment.
-    Use StringBuffer when you need to modify a string frequently in a multi-threaded environment.
+    1. Use String when your string won't change often.
+    2. Use StringBuilder when you need to modify a string frequently in a single-threaded environment.
+    3. Use StringBuffer when you need to modify a string frequently in a multi-threaded environment.
 
     */
+
+    public static void main(String[] args) {
+/*
+        String name = "Bob";
+
+        String lastName = new String("Bob").intern();
+
+        System.out.println( name.hashCode() );
+        System.out.println( lastName.hashCode() );
+
+        System.out.println( name == lastName );*/
+
+//        StringBuilder stb = new StringBuilder("Bob").intern();
+
+//        stb.toString();
+//
+//        System.out.println( stb == name );
+//
+//        System.out.println( stb.equals(name) );
+
+        StringBuilder stb = new StringBuilder();
+
+        stb.append("Bob");
+
+        System.out.println(  stb );
+
+        stb.append(" is learning Java!");
+
+        System.out.println( stb );
+
+        stb.insert(0, "Message: ");
+
+        System.out.println(stb);
+
+/*      Bob is learning Java!
+        Message: Bob is learning Java!
+
+        */
+    }
 
 
 }

@@ -8,4 +8,10 @@ public final class ClassA {
      void print() {
         System.out.println("Printing a message from the class A!");
     }
+
+
+
+    public static void main(String[] args) {
+        
+    }
 }
